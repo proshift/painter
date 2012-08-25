@@ -46,42 +46,40 @@ ddsmoothmenu.init({
 <body>
 
 <div id="templatemo_wrapper">
-	<div id="templatemo_header">
-        <div id="site_title">
-        	<h1><a href="http://www.templatemo.com">Free CSS Templates</a></h1>
+	   	   <div id="templatemo_slider_wrapper">
+        
+        <div id="slider" class="nivoSlider">
+             <a href="#"><img src="images/slider/03.jpg" alt="Slider 03" title="Your Sample Image Heading Goes Here 3" /></a>
+            <a href="#"><img src="images/slider/01.jpg" alt="Slider 01" title="Your Sample Image Heading Goes Here 1" /></a>
+            <a href="#"><img src="images/slider/02.jpg" alt="Slider 02" title="Your Sample Image Heading Goes Here 2" /></a>
+            <a href="#"><img src="images/slider/04.jpg" alt="Slider 04" title="Your Sample Image Heading Goes Here 4" /></a>
+            <a href="#"><img src="images/slider/05.jpg" alt="Slider 05" title="Your Sample Image Heading Goes Here 4" /></a>
         </div>
-        <div id="templatemo_search">
-            <form action="#" method="get">
-              <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-            </form>
+        
+        <div id="htmlcaption" class="nivo-html-caption">
+        	<strong>This</strong> is an example of a HTML caption with <a href="#">a link</a>.
         </div>
-        <div class="cleaner"></div>
-    </div> <!-- end of header -->
+    
+    </div>
+    
+
+    
+    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+    $('#slider').nivoSlider();
+    });
+    </script>
+
     
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a>
-                <ul>
-                    <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                    <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                    <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                    <span></span>
-                </ul>
-            </li>
-            <li><a href="portfolio.html">Portfolio</a>
-                <ul>
-                    <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                    <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                    <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                    <li><a href="http://www.templatemo.com/page/4">Sub menu 4</a></li>
-                    <li><a href="http://www.templatemo.com/page/5">Sub menu 5</a></li>
-                	<span></span>
-                </ul>
-          	</li>
-          	<li><a href="blog.html" class="selected">Blog</a></li>
-          	<li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html" >Дом (Home)</a></li>
+            <li><a href="about.html">Биография</a></li>
+            <li><a href="portfolio.html">Gallery</a></li>
+          	<li><a href="blog.html" class="selected">Статьи </a></li>
+          	<li><a href="contact.html"> Контакты</a></li>
         </ul>
         <br style="clear: left" />
     </div> <!-- end of menu -->
